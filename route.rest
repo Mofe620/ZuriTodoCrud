@@ -1,0 +1,29 @@
+//TEST FILE for REST CLIENT Extension
+
+GET http://localhost:7000/todo
+###
+
+POST http://localhost:7000/todo
+Content-Type: application/json
+
+{
+    "title": "Do the laundry",
+    "description": "Will take about 45mins"
+}
+###
+
+PUT http://localhost:7000/todo
+Content-Type: application/json
+
+{
+    "title": "See the Vete Doc",
+    "description": "She has been very lazy this week"
+}
+###
+
+DELETE http://localhost:7000/todo
+Content-Type: application/json
+
+{
+    "title": "See the Vete Doc"
+}
